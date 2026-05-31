@@ -3,168 +3,577 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Arun Cement Works</title>
+
+<title>Arun Cement Works | RCC Cement Pipe Manufacturer Hyderabad</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
-background:#f5f5f5;
+font-family:Poppins,sans-serif;
+background:#fff;
+color:#222;
 }
 
-header{
-background:#222;
+:root{
+--navy:#1B3A6B;
+--gold:#B8973A;
+--light:#f5f7fb;
+}
+
+nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:rgba(27,58,107,.95);
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+}
+
+.logo{
+font-family:Oswald;
+font-size:28px;
 color:white;
-padding:20px;
-text-align:center;
+font-weight:700;
 }
 
-header h1{
-font-size:40px;
+.logo span{
+color:var(--gold);
+}
+
+nav ul{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:500;
 }
 
 .hero{
-background:#444;
-color:white;
-text-align:center;
-padding:80px 20px;
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+url('yard2.jpg.jpeg');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+padding:0 10%;
 }
 
-.hero h2{
-font-size:36px;
-margin-bottom:15px;
+.hero-content{
+max-width:700px;
+color:white;
+}
+
+.badge{
+display:inline-block;
+background:var(--gold);
+padding:10px 20px;
+border-radius:30px;
+font-size:14px;
+margin-bottom:20px;
+font-weight:600;
+}
+
+.hero h1{
+font-family:Oswald;
+font-size:90px;
+line-height:1;
+}
+
+.hero h1 span{
+color:var(--gold);
 }
 
 .hero p{
-font-size:18px;
-margin-bottom:20px;
+font-size:20px;
+margin:20px 0;
+}
+
+.buttons{
+display:flex;
+gap:15px;
+margin-top:25px;
+flex-wrap:wrap;
 }
 
 .btn{
-background:#ff9800;
-color:white;
-padding:12px 25px;
+padding:14px 28px;
 text-decoration:none;
-border-radius:5px;
-font-size:18px;
+border-radius:8px;
+font-weight:600;
 }
 
-section{
-padding:50px 10%;
-background:white;
-margin:20px;
-border-radius:10px;
+.call{
+background:var(--gold);
+color:white;
 }
 
-h2{
-margin-bottom:20px;
-color:#333;
+.whatsapp{
+border:2px solid white;
+color:white;
 }
 
-.products{
+.stats{
+margin-top:60px;
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+grid-template-columns:repeat(4,1fr);
 gap:20px;
 }
 
-.card{
-background:#f0f0f0;
-padding:20px;
-border-radius:10px;
-text-align:center;
+.stats h2{
+color:var(--gold);
+font-size:36px;
 }
 
-.contact p{
-margin:10px 0;
-font-size:18px;
+.stats p{
+font-size:14px;
 }
 
-footer{
-background:#222;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:20px;
+section{
+padding:90px 10%;
 }
+
+.section-title{
+font-family:Oswald;
+font-size:48px;
+color:var(--navy);
+margin-bottom:30px;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:12px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:55px;
+}
+
+.stats{
+grid-template-columns:repeat(2,1fr);
+}
+
+.about{
+grid-template-columns:1fr;
+}
+
+nav ul{
+display:none;
+}
+}
+
 </style>
 </head>
 
 <body>
 
-<header>
-<h1>ARUN CEMENT WORKS</h1>
-<p>Manufacturers of Cement Pipes & Chambers</p>
-</header>
+<nav>
 
-<div class="hero">
-<h2>Quality RCC Cement Pipes</h2>
-<p>Reliable Manufacturing • Bulk Orders • Fast Delivery</p>
-
-<a class="btn" href="tel:9394256665">Call 9394256665</a>
+<div class="logo">
+ARUN <span>CEMENT</span> WORKS
 </div>
 
-<section>
-<h2>About Us</h2>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#products">Products</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<div class="badge">
+HYDERABAD'S TRUSTED MANUFACTURER
+</div>
+
+<h1>
+ARUN <span>CEMENT</span><br>
+WORKS
+</h1>
 
 <p>
-Arun Cement Works is a trusted manufacturer of RCC Cement Pipes,
-Cement Chambers and Concrete Products. We provide quality products
-for construction, drainage and infrastructure projects.
+Strength in Every Pipe. Quality in Every Pour.
 </p>
+
+<div class="buttons">
+
+<a href="tel:9394256665" class="btn call">
+📞 Call Now
+</a>
+
+<a href="https://wa.me/919394256665" class="btn whatsapp">
+💬 WhatsApp
+</a>
+
+</div>
+
+<div class="stats">
+
+<div>
+<h2>15+</h2>
+<p>Years in Business</p>
+</div>
+
+<div>
+<h2>50K+</h2>
+<p>Pipes Delivered</p>
+</div>
+
+<div>
+<h2>500+</h2>
+<p>Happy Clients</p>
+</div>
+
+<div>
+<h2>4+</h2>
+<p>Industries Served</p>
+</div>
+
+</div>
+
+</div>
+
 </section>
+<section id="about">
 
-<section>
-<h2>Our Products</h2>
+<h2 class="section-title">About Us</h2>
 
-<div class="products">
+<div class="about">
 
-<div class="card">
-<h3>RCC Cement Pipes</h3>
-</div>
-
-<div class="card">
-<h3>Cement Chambers</h3>
-</div>
-
-<div class="card">
-<h3>Drainage Pipes</h3>
-</div>
-
-<div class="card">
-<h3>Custom Concrete Products</h3>
-</div>
-
-</div>
-
-</section>
-
-<section class="contact">
-<h2>Contact Us</h2>
-
-<p><strong>Phone:</strong> 9394256665</p>
+<div>
 
 <p>
-<strong>Address:</strong><br>
-Near Kachvan Sigaram,<br>
-Divya Nagar Road,<br>
-Opposite VR Infra Concrete,<br>
+Arun Cement Works is a Hyderabad-based manufacturer of RCC Cement Pipes, Cement Chambers and Concrete Products with over 15 years of industry experience.
+</p>
+
+<br>
+
+<p>
+We supply high-quality products for drainage, construction, irrigation and infrastructure projects across Telangana.
+</p>
+
+<br>
+
+<p>
+Our manufacturing facility is equipped to handle bulk orders with consistent quality and timely delivery.
+</p>
+
+<br>
+
+<ul style="line-height:35px;font-size:18px;">
+<li>✔ 15+ Years Experience</li>
+<li>✔ Bulk Orders Accepted</li>
+<li>✔ Reliable Delivery</li>
+<li>✔ Quality Assured Products</li>
+<li>✔ Competitive Pricing</li>
+</ul>
+
+</div>
+
+<div>
+<img src="yard1.jpg.jpeg">
+</div>
+
+</div>
+
+</section>
+
+<section id="products" style="background:#f5f7fb;">
+
+<h2 class="section-title">Our Products</h2>
+
+<div style="
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;">
+
+<div style="background:white;padding:25px;border-radius:12px;">
+<h3>RCC Cement Pipes</h3>
+<br>
+<p>High quality RCC pipes for drainage, sewage and irrigation projects.</p>
+</div>
+
+<div style="background:white;padding:25px;border-radius:12px;">
+<h3>Cement Chambers</h3>
+<br>
+<p>Durable cement chambers for residential and commercial applications.</p>
+</div>
+
+<div style="background:white;padding:25px;border-radius:12px;">
+<h3>Drainage Pipes</h3>
+<br>
+<p>Strong drainage solutions for infrastructure projects.</p>
+</div>
+
+<div style="background:white;padding:25px;border-radius:12px;">
+<h3>Custom Concrete Products</h3>
+<br>
+<p>Manufactured according to project requirements.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="gallery">
+
+<h2 class="section-title">Photo Gallery</h2>
+
+<div style="
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;">
+
+<img src="yard1.jpg.jpeg" style="width:100%;border-radius:10px;">
+<img src="yard2.jpg.jpeg" style="width:100%;border-radius:10px;">
+<img src="yard3.jpg.jpeg" style="width:100%;border-radius:10px;">
+
+</div>
+
+</section>
+
+<section style="background:#f5f7fb;">
+
+<h2 class="section-title">Cost Estimator</h2>
+
+<div style="
+max-width:700px;
+margin:auto;
+background:white;
+padding:30px;
+border-radius:12px;">
+
+<label>Product Type</label>
+
+<select id="product" style="width:100%;padding:12px;margin:10px 0;">
+<option value="700">300mm Pipe - ₹700</option>
+<option value="1000">600mm Pipe - ₹1000</option>
+<option value="1500">900mm Pipe - ₹1500</option>
+<option value="1000">Cement Chamber - ₹1000</option>
+</select>
+
+<label>Quantity</label>
+<input type="number" id="qty" value="1" style="width:100%;padding:12px;margin:10px 0;">
+
+<label>Transport Distance (KM)</label>
+<input type="number" id="km" value="1" style="width:100%;padding:12px;margin:10px 0;">
+
+<button onclick="calculateCost()" style="
+background:#1B3A6B;
+color:white;
+padding:14px 25px;
+border:none;
+border-radius:8px;
+cursor:pointer;">
+Calculate Cost
+</button>
+
+<h3 id="result" style="margin-top:20px;"></h3>
+
+</div>
+
+</section>
+
+<script>
+
+function calculateCost(){
+
+let product=
+parseInt(document.getElementById('product').value);
+
+let qty=
+parseInt(document.getElementById('qty').value);
+
+let km=
+parseInt(document.getElementById('km').value);
+
+let material=
+product*qty;
+
+let transport=
+km*20;
+
+let total=
+material+transport;
+
+document.getElementById('result').innerHTML=
+"Material Cost: ₹"+material+
+"<br>Transport: ₹"+transport+
+"<br><br><b>Total Estimated Cost: ₹"+total+"</b>";
+}
+
+</script>
+<section id="contact">
+
+<h2 class="section-title">Contact Us</h2>
+
+<div style="
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;">
+
+<div>
+
+<h3>📞 Phone</h3>
+<p>9394256665</p>
+
+<br>
+
+<h3>💬 WhatsApp</h3>
+<p>9394256665</p>
+
+<br>
+
+<h3>📧 Email</h3>
+<p>arunvarun8084@gmail.com</p>
+
+<br>
+
+<h3>📍 Address</h3>
+
+<p>
+Near Kachvan Sigaram<br>
+Divya Nagar Road<br>
+Opposite VR Infra Concrete<br>
 Hyderabad - 500088
 </p>
 
-<p>
-<strong>Google Maps Coordinates:</strong><br>
-17°23'48.0"N 78°37'44.0"E
-</p>
+<br>
+
+<a href="https://maps.app.goo.gl/QehUsnAiGdzvPmmk7"
+target="_blank"
+style="
+background:#1B3A6B;
+color:white;
+padding:12px 20px;
+text-decoration:none;
+border-radius:8px;">
+View on Google Maps
+</a>
+
+</div>
+
+<div>
+
+<form>
+
+<input
+type="text"
+placeholder="Your Name"
+style="width:100%;padding:12px;margin:10px 0;">
+
+<input
+type="tel"
+placeholder="Phone Number"
+style="width:100%;padding:12px;margin:10px 0;">
+
+<input
+type="text"
+placeholder="Company Name"
+style="width:100%;padding:12px;margin:10px 0;">
+
+<textarea
+placeholder="Your Requirement"
+style="width:100%;height:120px;padding:12px;margin:10px 0;"></textarea>
+
+<button
+type="button"
+style="
+background:#B8973A;
+color:white;
+border:none;
+padding:14px 25px;
+border-radius:8px;">
+Send Inquiry
+</button>
+
+</form>
+
+</div>
+
+</div>
 
 </section>
 
-<footer>
+<a href="https://wa.me/919394256665"
+target="_blank"
+style="
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 18px;
+border-radius:50%;
+font-size:28px;
+text-decoration:none;
+z-index:9999;">
+💬
+</a>
+
+<footer style="
+background:#1B3A6B;
+color:white;
+padding:40px;
+text-align:center;">
+
+<h2>ARUN CEMENT WORKS</h2>
+
+<p>
+Strength in Every Pipe. Quality in Every Pour.
+</p>
+
+<br>
+
+<p>
+RCC Cement Pipes • Cement Chambers • Drainage Pipes
+</p>
+
+<br>
+
+<p>
+📞 9394256665 |
+📧 arunvarun8084@gmail.com
+</p>
+
+<br>
+
+<p>
 © 2026 Arun Cement Works. All Rights Reserved.
+</p>
+
 </footer>
 
 </body>
